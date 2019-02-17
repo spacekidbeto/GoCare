@@ -1,4 +1,4 @@
  var inputData = [["Female", 34.89, 12.89],["Male", 35.59, 13.89],["Female", 35.89, 14.89]];
 
 
- export default input;
+ export default inputData;
