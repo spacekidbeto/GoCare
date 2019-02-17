@@ -1,8 +1,23 @@
-var locations = [
-      ['Peter', 32.85, -96.79],
-      ['Omar', 32.75, -96.79],
-      ['Male 14:10 Group', 32.85, -96.59]
-    ];
+import inputData from 'inputData';
+
+$.getJSON('input.json')
+   .done(function (data) {
+       myList = data;
+   });
+
+   console.log(myList)
+
+/////////////////////////////////////////////////////////
+
+// var locations = [
+//       ['Female', 32.85, -96.79],
+//       ['Male', 32.75, -96.79],
+//       ['Male 14:10 Group', 32.85, -96.59]
+//     ];
+
+//var myJsonString = JSON.stringify(locations);
+
+//console.log(myJsonString);
 
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 10,
@@ -14,15 +29,15 @@ var locations = [
 
     var marker, i;
 
-    for (i = 0; i < locations.length; i++) {  
+    for (i = 0; i < inputData.length; i++) {  
       marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        position: new google.maps.LatLng(inputData[i][1], inputData[i][2]),
         map: map
       });
 
       google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
-          infowindow.setContent(locations[i][0]);
+          infowindow.setContent(inputData[i][0]);
           infowindow.open(map, marker);
         }
       })(marker, i));
