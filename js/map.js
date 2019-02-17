@@ -1,8 +1,12 @@
 var locations = [
-      ['Peter', 32.85, -96.79, 3],
-      ['Omar', 32.75, -96.79, 2],
-      ['Roberto', 32.85, -96.59, 1]
+      ['Peter', 32.85, -96.79],
+      ['Omar', 32.75, -96.79],
+      ['Male 14:10 Group', 32.85, -96.59]
     ];
+
+    var config = require('data.json');
+console.log(config.lon + ' ' + config.lan + '' + config.sex + '' + config.desc + ' ' );
+
 
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 10,
