@@ -1,4 +1,4 @@
-import inputData from 'add.js';
+import inputData from "./add.js";
 console.log(inputData(2,3));
 
 $.getJSON('input.json')
