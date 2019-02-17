@@ -1,5 +1,5 @@
-import inputData from 'input.json';
-console.log(inputData);
+import inputData from 'add.js';
+console.log(inputData(2,3));
 
 $.getJSON('input.json')
    .done(function (data) {
