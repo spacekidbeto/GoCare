@@ -1,18 +1,15 @@
 
 
-const api = "http://api.open-notify.org/astros.json";
-var data = fetch(api)
-console.log(data);
-
-var locations = [
-      ['Female', 32.85, -96.79],
-      ['Male', 32.75, -96.79],
-      ['Mattggle 14:10 Group', 32.85, -96.59]
-    ];
-
-//var myJsonString = JSON.stringify(locations);
-
-//console.log(myJsonString);
+ var locations = [
+       ['Female, 2/12/19 - 17:07', 32.85, -96.79],
+       ['Male, 2/10/19 - 11:44', 32.75, -96.79],
+       ['Female, 2/12/19 - 21:01', 32.85, -96.59],
+       ['Female, 2/12/19 - 21:11', 32.88, -96.56],
+       ['Female, 2/12/19 - 21:11', 32.87, -96.58],
+       ['Female, 2/12/19 - 21:11', 32.84, -96.64],
+       ['Female, 2/12/19 - 21:11', 32.85, -96.60],
+       ['Female, 2/12/19 - 21:11', 32.891, -96.65]
+     ];
 
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 10,
