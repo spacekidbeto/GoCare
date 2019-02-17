@@ -4,10 +4,6 @@ var locations = [
       ['Male 14:10 Group', 32.85, -96.59]
     ];
 
-    var config = require('data.json');
-console.log(config.lon + ' ' + config.lan + '' + config.sex + '' + config.desc + ' ' );
-
-
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 10,
       center: new google.maps.LatLng(32.77, -96.76),
