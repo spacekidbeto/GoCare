@@ -1,4 +1,4 @@
-import inputData from 'inputData';
+import inputData from 'input.json';
 
 $.getJSON('input.json')
    .done(function (data) {
