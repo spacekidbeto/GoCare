@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html> 
-<head> 
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
-  <title>Google Maps Multiple Markers</title> 
-  <script src="http://maps.google.com/maps/api/js?key=AIzaSyAoT4kmYRVfLLejeLN5LDPWmXS1GG9PGt0&callback=map" 
-          type="text/javascript"></script>
-</head> 
-<body>
-  <div id="map" style="width: 500px; height: 400px;"></div>
-    <div id="floating-panel">
-
-    </div>
-  <script type="text/javascript">
-    var locations = [
+var locations = [
       ['Peter', 32.85, -96.79, 3],
       ['Omar', 32.75, -96.79, 2],
       ['Roberto', 32.85, -96.59, 1]
@@ -41,6 +27,3 @@
         }
       })(marker, i));
     }
-  </script>
-</body>
-</html>
